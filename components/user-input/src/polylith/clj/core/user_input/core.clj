@@ -57,6 +57,7 @@
                 all-bricks!
                 brick!
                 compact!
+                commit!
                 git-add!
                 latest-sha!
                 no-changes!
@@ -78,6 +79,7 @@
                       :file file
                       :fake-sha fake-sha
                       :interface interface
+                      :is-commit (= "true" commit!)
                       :is-tap (= "true" tap!)
                       :is-search-for-ws-dir (contains? (set args) "::")
                       :is-all (= "true" all!)
