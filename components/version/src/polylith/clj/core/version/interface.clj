@@ -24,5 +24,11 @@
                         :date date}
               :ws {:type :toolsdeps2
                    :breaking 1
-                   :non-breaking 0}}
+                   :non-breaking 1}}
              from (assoc :from from)))))
+
+;; === workspace attributes (ws) ===
+;;
+;; ws     release  action  attribute
+;; -----  -------  ------  ---------------------------------
+;; 1.1     0.2.14   added  :settings > :vcs > :is-git-repo
